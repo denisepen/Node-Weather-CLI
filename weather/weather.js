@@ -1,5 +1,7 @@
 const request = require('request');
 
+// next step is to use axios for promises to eliminate need for callbacks.
+
 var getWeather = (lat, lng, callback) => {
   request({
     url: `https://api.darksky.net/forecast/c6ffe4a0df86c7c3592f14030938b1fe/${lat},${lng}`,
@@ -18,5 +20,7 @@ var getWeather = (lat, lng, callback) => {
 
   })
 };
+
+
 
 module.exports.getWeather = getWeather;
