@@ -20,7 +20,7 @@ const argv = yargs
   // console.log(argv);
 
   geocode.geocodeAddress(argv.address, (errorMessage, results) => {
-    console.log("Results: ", results);
+    // console.log("Results: ", results);
     if(errorMessage) {
       console.log(errorMessage);
     } else {
